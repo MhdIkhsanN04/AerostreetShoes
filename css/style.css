@@ -1,0 +1,359 @@
+:root {
+  --primer: #a30000;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(1, 1, 1);
+  border-bottom: 1px solid #a30000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .img-logo {
+  width: 5%;
+  margin-right: 10px;
+}
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primer);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 16px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primer);
+}
+
+.navbar .navbar-nav a:after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 0.1rem solid var(--primer);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-ekstra a {
+  color: #fff;
+  margin: 0 8px;
+}
+
+.navbar .navbar-ekstra a :hover {
+  color: var(--primer);
+}
+
+#Menu-bar {
+  display: none;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../image/sepatu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page .content {
+  padding: 1.2rem 5%;
+  max-width: 40rem;
+}
+
+.page .content h1 {
+  font-size: 5em;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.page .content h1 span {
+  color: var(--primer);
+}
+
+.page .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+}
+
+.page .content .more {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primer);
+  border-radius: 8px;
+}
+
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primer);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row.content {
+  flex: 1 1 3 5rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.galeri {
+  padding: 8rem 7% 1.4rem;
+}
+
+.galeri h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.galeri h2 span {
+  color: var(--primer);
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.galeri .row .galeri-card {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.galeri .row .galeri-card img {
+  width: 50%;
+}
+
+.galeri .row .galeri-card .galeri-tittle {
+  margin-top: 1rem auto 8px;
+}
+
+.kolaborasi h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.kolaborasi h2 span {
+  color: var(--primer);
+}
+
+.kolaborasi .produk {
+  display: flex;
+}
+
+.kolaborasi .produk .produk-img {
+  flex: 1 1 40rem;
+}
+
+.kolaborasi .produk .produk-img img {
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.kolaborasi .produk .content-produk {
+  flex: 1 1 3 rem;
+  padding: 0 1rem;
+}
+
+.kolaborasi .produk .content-produk h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.kolaborasi .produk .content-produk p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+footer {
+  background-color: var(--primer);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: var(--bg);
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+/* Media */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tab */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #Menu-bar {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 240px;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 24px;
+    padding: 4px;
+    font-size: 16px;
+  }
+  .navbar .navbar-nav a:after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 40rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .kolaborasi .produk {
+    flex-wrap: wrap;
+  }
+
+  .kolaborasi .produk .produk-img img {
+    height: 40rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .kolaborasi .produk .content-produk {
+    padding: 0;
+  }
+  .kolaborasi .produk .content-produk {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .kolaborasi .produk .content-produk p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
